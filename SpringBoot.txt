@@ -75,3 +75,4 @@ Ans:-   1. It adds the @Configuration annotation.
         2. It enables auto-configuration with @EnableAutoConfiguration.
         3. It enables component scanning with @ComponentScan.
 
+[]
