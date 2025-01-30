@@ -1,0 +1,77 @@
+[] What is Spring Boot?
+Ans:-   Spring Boot is a framework for building applications in the Java programming language.
+        It provides tools that can help to build an application in Java.
+
+        Official Website Definition:-
+        Spring Boot makes it easy to create stand-alone, production-grade Spring-based applications that you can just run.
+
+[] Why did Spring Boot come into the market?
+Ans:-   Spring Boot came into the market to simplify the development of new Spring applications.
+        It reduces the amount of boilerplate code and configuration required to set up a Spring application.
+        Spring Boot provides a range of non-functional features common to large classes of projects, such as embedded servers, security, metrics, health checks, and externalized configuration.
+
+Note:-  Spring Boot is an auto-configuration and standalone application framework.
+
+[] What is a bean?
+Ans:-   1. A bean is an object that is instantiated, assembled, and managed by a Spring Inversion of Control (IoC) container.
+        2. In the Spring framework, you need to provide metadata to the container to scan and instantiate the beans.
+
+[] How to make a Bean?
+Ans:-   To create a bean in Spring, you can use annotations such as @Component, @Service, @Repository, or @Controller. 
+        These annotations tell the Spring framework to manage these classes as beans.
+
+        Example:
+        @Component
+        public class MyBean {
+            public void doSomething() {
+                System.out.print("Bean is doing something");
+            }
+        }
+
+
+[] What is Maven?
+Ans:-   Maven is a build automation tool used primarily for Java projects. It helps manage project dependencies, build processes, and documentation.
+
+[] What is IoC?
+Ans:-   The IoC container is responsible for creating an object and managing the object's lifecycle throughout the project.
+
+[] What is Application Context?
+Ans:-   Application context is a way to implement the IoC container.
+
+[] What is annotation?
+Ans:-   An annotation is a form of metadata that provides information about class,interface,method,field etc.
+
+        @Component      #this is annotation
+        public class MyComponent {
+                public void doSomething() {
+                        System.out.print("Component doing something");
+                }
+        }
+
+        @Service       #this is annotation
+        public class MyService {
+                public String processData(String data) {
+                        return data.toUpperCase();
+                }
+        }
+
+        @Repository
+        public class MyRepository {
+                public void saveData(Object data) {
+                        // Database interaction logic here
+                }
+        }
+
+        @Controller
+        public class MyController {
+                @GetMapping("/hello")
+                public String hello() {
+                        return "hello"; // Returns a view name
+                }
+        }
+
+[] What does @SpringBootApplication do?
+Ans:-   1. It adds the @Configuration annotation.
+        2. It enables auto-configuration with @EnableAutoConfiguration.
+        3. It enables component scanning with @ComponentScan.
+
