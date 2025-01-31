@@ -1,0 +1,109 @@
+[] What is Spring Boot?
+Ans:-   Spring Boot is a framework for building applications in the Java programming language. It provides tools that can help to build an application in Java.
+
+        Official Website Definition:-
+        Spring Boot makes it easy to create stand-alone, production-grade Spring-based applications that you can just run.
+
+[] Why did Spring Boot come into the market?
+Ans:-   1. Spring Boot came into the market to simplify the development of new Spring applications.
+        2. It reduces the amount of boilerplate code and configuration required to set up a Spring application.
+        3. Spring Boot provides a range of non-functional features common to large classes of projects, such as embedded servers, security, metrics, health checks, and externalized configuration.
+
+Note:-  Spring Boot is an auto-configuration and standalone application framework.
+
+[] What is a bean?
+Ans:-   1. A bean is an object that is instantiated, assembled, and managed by a Spring Inversion of Control (IoC) container.
+        2. In the Spring framework, you need to provide metadata to the container to scan and instantiate the beans.
+
+[] How to make a Bean?
+Ans:-   To create a bean in Spring, you can use annotations such as @Component, @Service, @Repository, or @Controller. 
+        These annotations tell the Spring framework to manage these classes as beans.
+
+        Example:
+        @Component
+        public class MyBean {
+            public void doSomething() {
+                System.out.print("Bean is doing something");
+            }
+        }
+
+
+[] What is Maven?
+Ans:-   Maven is a build automation tool used primarily for Java projects. It helps manage project dependencies, build processes, and documentation.
+
+[] What is IoC?
+Ans:-   The IoC container is responsible for creating an object and managing the object's lifecycle throughout the project.
+
+[] What is Application Context?
+Ans:-   Application context is a way to implement the IoC container.
+
+[] What is annotation?
+Ans:-   An annotation is a form of metadata that provides information about class,interface,method,field etc.
+
+        @Component      #this is annotation
+        public class MyComponent {
+                public void doSomething() {
+                        System.out.print("Component doing something");
+                }
+        }
+
+        @Service       #this is annotation
+        public class MyService {
+                public String processData(String data) {
+                        return data.toUpperCase();
+                }
+        }
+
+        @Repository
+        public class MyRepository {
+                public void saveData(Object data) {
+                        // Database interaction logic here
+                }
+        }
+
+        @Controller
+        public class MyController {
+                @GetMapping("/hello")
+                public String hello() {
+                        return "hello"; // Returns a view name
+                }
+        }
+
+[] What does @SpringBootApplication do?
+Ans:-   1. It adds the @Configuration annotation.
+        2. It enables auto-configuration with @EnableAutoConfiguration.
+        3. It enables component scanning with @ComponentScan.
+
+[] What is REST API?
+Ans:-   REST API (Representational State Transfer Application Programming Interface) is a way to allow different software applications to communicate with each other over the internet using standard HTTP methods like GET, POST, PUT, and DELETE. It is designed to be simple, scalable, and stateless, making it easy to build and use web services.
+        GET: Used to read or get data.
+        POST: Used to create new data.
+        PUT: Used to update existing data.
+        DELETE: Used to delete data.
+
+[] What is @RestController?
+ANs:-   Special type of component that handle HTTP request.
+
+
+[] What is ORM?
+Ans:-   1. ORM is a technique used to map java object to database tables.
+        2. It allows developers to work database using object oriented programming concept, making it easier to interact with relational database.
+        3. ORM frameworks like Hibernate can map the fields in the user class to columns in the users table, making it easier to insert, update, retrieve and delete records.
+        
+
+[] What is JPA?
+Ans:-   1. It stand for Java Persistence API
+        2. It is provide the set or rule to achieve the ORM framework.
+        3. A way to achieve ORM, includes interfaces and annotation that you use in your Java classes, requires a persistence provider(ORM tools) for implementation.
+
+[] What is Persistence provider.
+Ans:-   1. A persistence provider is a specific implementation of the JPA specification. Ex of JPA  persistence provider include Hibernate, EclipseLink, and OpenJPA. These providers implementation the JPA interface and provide the underlying functionality to interact with database. 
+        2. To use a JPA, you need a persistence provider. 
+
+
+[] What is Spring Data JPA?
+Ans:-   1. Spring Data JPA is built top of the JPA specification, but it is not a JPA implementation itself. Instead , it simplifies working with JPA by providing higher-level abstractions and utilities.
+        2. However, to use Spring Data JPA effectively, you still need a JPA implementation, such as Hibernate, EclipseLink, or another JPA-compliant provider, to handle the actual database interactions.
+
+[]
+
